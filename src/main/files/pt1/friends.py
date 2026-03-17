@@ -2,7 +2,7 @@
 friends = input('Enter 3 friend names: ').split(',')
 
 # for each friend, we'll tell the user whether they are nearby
-people = open('people.txt', 'r')
+people = open('../people.txt', 'r')
 people_nearby = [line.strip() for line in people.readlines()]
 people.close()
 
@@ -12,7 +12,7 @@ people_nearby_set = set(people_nearby)
 
 friends_nearby_set = friends_set.intersection(people_nearby_set)
 
-nearby_friends_file = open('nearby_friends.txt', 'w')
+nearby_friends_file = open('../nearby_friends.txt', 'w')
 
 for friend in friends_nearby_set:
     print(f'{friend} is nearby! Meet up with them')
