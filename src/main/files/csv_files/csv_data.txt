@@ -1,0 +1,4 @@
+name,age,university,degree
+jake,32,mit,computer science
+bishop,25,oxford,computing
+anna,30,cambridge,physics
